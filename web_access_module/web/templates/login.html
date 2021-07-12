@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB ACCESS</title>
+</head>
+<body>
+{% block content %}
+<h1> Login </h1>
+
+<form method="post" action="{{ url_for('.login_form') }}">
+    {{ login_form.csrf_token }}
+    {{ login_form.login.label }}
+    {{ login_form.login }}
+    {{ login_form.password.label }}
+    {{ login_form.password }}
+    <input type="submit" value="Войти">
+
+
+{% endblock %}
+</body>
+</html>

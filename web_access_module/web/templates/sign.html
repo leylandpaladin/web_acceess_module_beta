@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB ACCESS</title>
+</head>
+<body>
+
+<h1> Добавить в базу данных </h1>
+
+<form method="post" action="{{ url_for('auth.add_customer_form') }}">
+    {{ add_customer_form.csrf_token }}
+    {{ add_customer_form.login.label }}
+    {{ add_customer_form.login }}
+    {{ add_customer_form.name.label }}
+    {{ add_customer_form.name }}
+    {{ add_customer_form.password.label }}
+    {{ add_customer_form.password }}
+    {{ add_customer_form.phone.label }}
+    {{ add_customer_form.phone }}
+    <input type="submit" value="Добавить">
+
+
+</body>
+</html>

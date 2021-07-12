@@ -21,3 +21,13 @@
 
 Сначала открывает index.html > оттуда можно логинится, после логина открывается profile_+id пользователя, оттуда и доступно все остальное.
 
+
+Библиотеки:
+
+Flask
+Flask-security
+FlaskWTF
+WTForms
+SQLAlchemy
+mariadb и maria_db_connector c/
+

@@ -24,10 +24,10 @@
 
 Библиотеки:
 
-Flask
-Flask-security
-FlaskWTF
-WTForms
-SQLAlchemy
-mariadb и maria_db_connector c/
+- Flask
+- Flask-security
+- FlaskWTF
+- WTForms
+- SQLAlchemy
+- mariadb и maria_db_connector c/
 

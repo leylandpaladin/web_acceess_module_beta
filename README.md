@@ -34,6 +34,9 @@
 
 OpenVPN:
 
+Установка
+- apt-get install OpenVPN
+
 Старт сервиса с нормальным конфигом 
 
 - systemctl start openvpn@server 

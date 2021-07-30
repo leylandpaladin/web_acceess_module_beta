@@ -40,6 +40,7 @@ OpenVPN:
 Старт сервиса с нормальным конфигом 
 
 - systemctl start openvpn@server 
+При этом, server, это файл //etc/OpenVPN/server.config
 
 Генерация Серта 
 

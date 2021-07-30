@@ -37,10 +37,9 @@ OpenVPN:
 Установка
 - apt-get install OpenVPN
 
-Старт сервиса с нормальным конфигом 
+Старт сервиса с нормальным конфигом, где server, это файл //etc/OpenVPN/server.config
 
 - systemctl start openvpn@server 
-При этом, server, это файл //etc/OpenVPN/server.config
 
 Генерация Серта 
 

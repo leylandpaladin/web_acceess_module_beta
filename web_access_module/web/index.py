@@ -4,4 +4,4 @@ index = Blueprint('index',__name__)
 
 @index.route('/', methods=['GET', 'POST'])
 def start():
-    return render_template('index.html')
+    return render_template('_BAK_.html')

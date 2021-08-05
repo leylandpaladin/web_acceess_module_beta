@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>profile</title>
-</head>
+
+{% include 'chunks/head.html' %} <!--head-шаблон сайта-->
+
+{% include 'chunks/header.html' %} <!--шаблон шапки сайта-->
 <body>
 {% block content %}
-<h1> profile </h1>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1> profile </h1>
 
 <h2> Тут будут функции доступные залогиненым пользователям! </h2>
+        </div>
+    </div>
+</div>
+
+
+{% include 'chunks/blocks/tariffs.html' %}<!-- тарифы -->
+
+{% include 'chunks/blocks/map.html' %}<!-- map -->
+
 {% endblock %}
 </body>
+{% include 'chunks/footer.html' %} <!--шаблон подвала сайта-->
 </html>

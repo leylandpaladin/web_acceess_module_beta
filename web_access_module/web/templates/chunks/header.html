@@ -1,0 +1,35 @@
+<header>
+    <div  class="container">
+        <div class="row">
+            <div class="col-4 justify-content-start"></div>
+            <div class="col-4 offset-3">
+            <div class="d-none d-md-block ta-r">
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal"> Регистрация</button>
+                <button class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal"> Вход</button>
+            </div>
+            </div>
+            <div class="col-1 nav-wrap justify-content-end">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+        {% include 'chunks/modal-window.html' %} <!--modal-->
+    </div>
+</header>
+<div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="d-block d-md-none sidenav-div">
+      <button class="btn btn-secondary"> Регистрация</button>
+      <button class="btn btn-outline-secondary"> Вход</button>
+    </div>
+    <a href="#">Как пользоваться автостудией</a>
+    <a href="#">Тарифы</a>
+    <a href="#">Карта</a>
+    <a href="#">Помощь</a>
+</div>

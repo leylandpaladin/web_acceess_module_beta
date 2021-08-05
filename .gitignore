@@ -1,0 +1,4 @@
+# flask_session/*
+/web_access_module/.idea/*
+/web_access_module/.vscode/*
+/web_access_module/web/__pycache__/*

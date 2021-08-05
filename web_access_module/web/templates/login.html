@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>WEB ACCESS</title>
-</head>
+<html lang="ru">
+
+{% include 'chunks/head.html' %} <!--head-шаблон сайта-->
+
+{% include 'chunks/header.html' %} <!--шаблон шапки сайта-->
 <body>
 {% block content %}
-<h1> Login </h1>
 
-<form method="post" action="{{ url_for('.login_form') }}">
-    {{ login_form.csrf_token }}
-    {{ login_form.login.label }}
-    {{ login_form.login }}
-    {{ login_form.password.label }}
-    {{ login_form.password }}
-    <input type="submit" value="Войти">
-
-
+<div class="container">
+    <div class="row">
+        <h1> Login </h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form method="post" action="{{ url_for('.login_form') }}">
+                {{ login_form.csrf_token }}
+                {{ login_form.login.label }}
+                {{ login_form.login }}
+                {{ login_form.password.label }}
+                {{ login_form.password }}
+                <input type="submit" value="Войти">
+            
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
 </body>
+{% include 'chunks/footer.html' %} <!--шаблон подвала сайта-->
 </html>

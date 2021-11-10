@@ -62,19 +62,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Document
 	 ========================================================================== */
 
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
- ::-webkit-scrollbar { /* chrome based */
-    width: 0px;  /* ширина scrollbar'a */
-    background: transparent;  /* опционально */
-}
 
 html {
-    scrollbar-width: none;
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
+	outline: none;
+	overflow-x: hidden!important;
 }
 
 /* Sections
@@ -472,7 +465,7 @@ acronym {
 mark,
 ins {
 	background: #fff9c0;
-	text-decoration: none;
+	text-decoration: none!important;
 }
 
 big {
@@ -705,7 +698,7 @@ textarea {
 
 .main-navigation a {
 	display: block;
-	text-decoration: none;
+	text-decoration: none!important;
 }
 
 /* Small menu. */

@@ -4,8 +4,8 @@
             <div class="col-4 justify-content-start"></div>
             <div class="col-4 offset-3">
             <div class="d-none d-md-block ta-r">
-                <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal"> Регистрация</button>
-                <button class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal"> Вход</button>
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#logupModal"> Регистрация</button>
+                <button class="btn btn-outline-secondary" data-toggle="modal" data-target="#loginModal"> Вход</button>
             </div>
             </div>
             <div class="col-1 nav-wrap justify-content-end">
@@ -13,6 +13,8 @@
             </div>
         </div>
         {% include 'chunks/modal-window.html' %} <!--modal-->
+        {% include 'chunks/logup-window.html' %} <!--modal-->
+        {% include 'chunks/login-window.html' %} <!--modal-->
     </div>
 </header>
 <div class="preloader">

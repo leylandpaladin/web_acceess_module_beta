@@ -1,0 +1,19 @@
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="content modal-content">
+      <div class="modal-header row">
+        <div class="col-12"><h5 class="modal-title" id="exampleModalLabel">Вход</h5></div>
+      </div>
+      <div class="row modal-body"> 
+        <div class="col-12">
+          <form method="post" action="/auth/">
+            <input id="csrf_token" name="csrf_token" type="hidden" value="Ijg0ZDllNjNmZGM2MzFhNTIwNWRkMTliMDJkYzUwYzNiYTAyMmI2YmQi.YQra0w.e3dCj3fvttzkajm_ACp8y71nntA">
+            <div class="row"><input id="login" name="login" type="text" value="" placeholder="Логин"></div>
+            <div class="row"><input id="password" name="password" type="password" value="" placeholder="Пароль"></div>
+            <div class="row"><input type="submit" value="Войти"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
